@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <title>Compound Interest Calculator</title>
+    <script src="js/CompoundInterest.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/CompoundInterest.css" />
+</head>
+ 
+<body>
+    
+<header>
+    <h1>Compound Interest Calculator</h1>
+</header>
+        
+        <label>Enter the Principal investment amount (P)</label>
+        <input type="text" id="principalLabel">
+            <br><br>
+            
+        <label>Enter monthly addition</label>
+        <input type="text" id="monthlyLabel">
+            <br><br>
+        
+        <label>Enter the annual interest rate (r) as a decimal</label>
+        <input type="text" id="interestRatelabel">
+            <br><br>
+        
+        <label>Enter the number of times interest compounded per year (n)</label>
+        <input type="text" id="timesComplabel">
+            <br><br>
+                
+        <label>Enter the number of years the money is invested</label>
+        <input type="text" id="yearsLabel">
+            <br><br>
+        
+        <label> A = the future value of the investment/loan, including interest</label>
+        <br><br>
+        <label> A = P (1 + r/n) ^ nt:</label>
+        <br><br>
+            
+            <button onclick="CalcValue()">Calculate the future value of the investment</button>
+            <br>
+                <hr>
+            
+            <label id="futureValuelabel">The future investment value will be displayed here.</label>
+ 
+</body>
+</html>
